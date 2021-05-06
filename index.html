@@ -27,7 +27,7 @@
     </div>
     <div class="user-menu__wrapper">
       <div class="user-menu">
-        <div class="user-menu__profile"><img src="img/user_profile_img.jpg" width="44.5" height="44.5" /></div>
+        <div class="user-menu__profile"><a href="#"><img src="img/user_profile_img.jpg" width="44.5" height="44.5" /></a></div>
         <div class="user-menu__points"><p>1244</p></div>
         <div class="user-menu__inbox">
           <button>
@@ -38,9 +38,15 @@
   </div>
   <main>
     <div class="content">
-      <div class="content__menu"></div>
-      <div class="content__section"></div>
-      <div class="content__sidebar"></div>
+      <div class="content__menu__container">
+        <ul class="content__menu">
+          <li class="content__menu--item active"><a href="#">Q&AMP;A</a></li>
+          <li class="content__menu--item"><a href="#">Site Proposals</a></li>
+          <li class="content__menu--item"><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="content__section__container"></div>
+      <div class="content__sidebar__container"></div>
     </div>
   </main>
   <script src="index.js"></script>
