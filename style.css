@@ -13,8 +13,17 @@ header, div, main, footer {
   font-size: 0;
 }
 
-p, a, h1, h2, h3, h4, h5, strong {
+p, a, h1, h2, h3, h4, h5, strong, button {
   font-size: 16px;
+  color: #4D4D4D;
+}
+
+button {
+  background: none;
+  border: none;
+  border-color: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -38,12 +47,12 @@ ul {
   line-height: normal;
 }
 
-.site-title, .top-bar__menu, .top-bar__menu li, .site-logo__wrapper, .user-menu {
+.site-title, .top-bar__menu, .top-bar__menu li, .site-logo__wrapper, .user-menu__wrapper {
   display: inline-block;
   vertical-align: top;
 }
 
-.site-title, .site-logo__wrapper, .user-menu {
+.site-title, .site-logo__wrapper, .user-menu__wrapper {
   width: 50%;
 }
 
@@ -60,7 +69,7 @@ ul {
   background-image: url(img/hero-bg.svg),linear-gradient(247.06deg,#ffc601 16.55%,#ff782f 90.3%);
   background-repeat: no-repeat;
   background-size: cover;
-  padding:0 40px;
+  padding:15px 40px 0 40px;
 }
 
 .site-logo__wrapper {
@@ -75,4 +84,45 @@ ul {
   margin-left: -10px;
   text-align: center;
   padding-top: 12px;
+}
+
+.user-menu__wrapper {
+  text-align: right;
+}
+
+.user-menu, .user-menu__profile, .user-menu__points, .user-menu__inbox {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.user-menu {
+  background: white;
+  border-radius: 4px;
+  text-align: left;
+  position: relative;
+  padding: 6px 2px 8px 28px;
+}
+
+.user-menu__profile {
+  width: 46px;
+  height:46px;
+  border-radius: 50%;
+  overflow: hidden;
+  outline: 3px solid white;
+  top: -2px;
+  left: -25px;
+  position: absolute;
+}
+
+.user-menu__profile img {
+  vertical-align: top;
+  position: relative;
+  width: 46px;
+  height:46px;
+}
+
+.user-menu__points {
+  font-weight: 700;
+  margin-right: 25px;
 }
