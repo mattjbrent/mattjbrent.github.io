@@ -1,4 +1,4 @@
-body, html, main, .top-bar {
+body, html, main, .top-bar, .site-header {
   width: 100%;
 }
 
@@ -38,11 +38,12 @@ ul {
   line-height: normal;
 }
 
-.site-title, .top-bar__menu, .top-bar__menu li {
+.site-title, .top-bar__menu, .top-bar__menu li, .site-logo__wrapper, .user-menu {
   display: inline-block;
+  vertical-align: top;
 }
 
-.site-title {
+.site-title, .site-logo__wrapper, .user-menu {
   width: 50%;
 }
 
@@ -53,4 +54,25 @@ ul {
 
 .top-bar__menu li {
   margin-left: 20px;
+}
+
+.site-header {
+  background-image: url(img/hero-bg.svg),linear-gradient(247.06deg,#ffc601 16.55%,#ff782f 90.3%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:0 40px;
+}
+
+.site-logo__wrapper {
+  vertical-align: bottom;
+}
+
+.site-logo {
+  border-radius: 4px 4px 0 0;
+  width: 170px;
+  height: 60px;
+  background-color: white;
+  margin-left: -10px;
+  text-align: center;
+  padding-top: 12px;
 }
