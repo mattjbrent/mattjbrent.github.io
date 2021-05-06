@@ -1,0 +1,56 @@
+body, html, main, .top-bar {
+  width: 100%;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+header, div, main, footer {
+  font-size: 0;
+}
+
+p, a, h1, h2, h3, h4, h5, strong {
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+.top-bar {
+  background-color: #148DD9;
+  padding: 8px 40px;
+}
+
+.top-bar a, .top-bar a strong {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.top-bar a strong {
+  font-weight: 700;
+  line-height: normal;
+}
+
+.site-title, .top-bar__menu, .top-bar__menu li {
+  display: inline-block;
+}
+
+.site-title {
+  width: 50%;
+}
+
+.top-bar__menu {
+  width: 50%;
+  text-align: right;
+}
+
+.top-bar__menu li {
+  margin-left: 20px;
+}
