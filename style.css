@@ -383,8 +383,19 @@ h3 {
   position: relative;
 }
 
+.health-bar > .zero { width: 0%; }
+.health-bar > .ten { width: 10%; }
+.health-bar > .twenty { width: 20%; }
+.health-bar > .thirty { width: 30%; }
+.health-bar > .forty { width: 40%; }
+.health-bar > .fifty { width: 50%; }
+.health-bar > .sixty { width: 60%; }
+.health-bar > .seventy { width: 70%; }
+.health-bar > .eighty { width: 80%; }
+.health-bar > .ninety { width: 90%; }
+
 .health-bar > div {
   background-color: #A6EB4F;
   height: 100%;
-  width: 80%;
+  width: 100%;
 }
