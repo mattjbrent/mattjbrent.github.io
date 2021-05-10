@@ -17,7 +17,7 @@ header, div, main, footer {
   font-size: 0;
 }
 
-p, a, h1, h2, h3, h4, h5, strong, button, input {
+p, a, h1, h2, h3, h4, h5, strong, button, input, label {
   font-size: 16px;
   color: #4D4D4D;
 }
@@ -191,13 +191,13 @@ h3 {
 
 .content__section__container {
   padding: 30px 20px;
-  width: 75%;
+  width: 72%;
   display: inline-block;
 }
 
 .content__sidebar__container {
   display: inline-block;
-  width:25%;
+  width:28%;
 }
 
 .content__menu--item {
@@ -418,13 +418,21 @@ h3 {
   padding: 4px 5px 6px 5px;
 }
 
+.filter__container {
+  border: 1px solid #C5D3DC;
+  margin-top: 40px;
+  padding: 10px;
+  position: relative;
+}
+
 .checkbox__container {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 30px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 14px;
+  line-height: 1.3;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -442,18 +450,22 @@ h3 {
 .checkbox {
   position: absolute;
   top: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  bottom: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
+  height: 20px;
+  width: 20px;
+  border-radius:2px;
+  border: 2px solid #148DD9;
 }
 
 .checkbox__container:hover input ~ .checkbox {
-  background-color: #ccc;
+  background-color: rgba(197,211,220, 0.2);
 }
 
 .checkbox__container input:checked ~ .checkbox {
-  background-color: #2196F3;
+  background-color: #148DD9;
 }
 
 .checkbox:after {
@@ -467,8 +479,8 @@ h3 {
 }
 
 .checkbox__container .checkbox:after {
-  left: 9px;
-  top: 5px;
+  left: 4px;
+  top: 0;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -476,4 +488,180 @@ h3 {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.input__container {
+  position: relative;
+}
+
+.input__container input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 7px 0 9px 0;
+  text-indent: 10px;
+  border: none;
+  outline: 1px solid #C5D3DC;
+  font-size: 14px;
+}
+
+.input__container label {
+  font-size: 14px;
+}
+
+.input__add {
+  border-radius: 2px;
+  background-color: #148DD9;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 22px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 3px;
+  bottom: 3px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: #C5D3DC;
+  margin: 20px 0;
+}
+
+.sidebar__header {
+  position: absolute;
+  top: -30px;
+  left: -1px;
+  background: white;
+  border: 1px solid #C5D3DC;
+  border-bottom: 0;
+  padding: 8px 10px 5px 10px;
+}
+
+.sidebar__header a {
+  font-weight: 600;
+  color: #0476D9;
+  font-size: 16px;
+}
+
+.filter_tags__container {
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.filter-tag {
+  display: inline-block;
+  padding: 3px 8px 5px 8px;
+  background-color: #A7B8C3;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.filter-tag p {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.select__container {
+  display: block;
+  width: 100%;
+}
+
+.select__label {
+  font-size: 14px;
+  display: block;
+}
+
+.select__item-container {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 6px 0 8px 0;
+  position: relative;
+  display: inline-block;
+  color: white;
+  width: 25%;
+  overflow: hidden;
+  margin-top: 10px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.select__item-container span {
+  font-size: 14px;
+  margin-right: -1px;
+  font-weight: 600;
+}
+
+.select__item-container.first {
+  border-radius: 4px 0 0 4px;
+}
+
+.select__item-container:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.select__item-container:hover .select__background  {
+  background-color: #8F9FA9;
+}
+
+.select__item-container input, .select__item-container input:checked {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  left: 0;
+  background: none;
+}
+
+.select__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #A7B8C3;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.select__item-container input:checked ~ .select__background {
+background-color: #758692;
+}
+
+.btn.filter {
+  width: 100%;
+  padding: 4px 0 6px 0;
+  margin-bottom: 10px;
+}
+
+.btn.filter.btn--outline, .btn.filter.btn--gray {
+  width: calc(50% - 5px);
+}
+
+.btn.filter.btn--outline {
+  outline: 1px solid #758692;
+  color: #758692;
+  background: none;
+}
+
+.btn.filter.btn--outline:hover {
+  background-color: #EEEEEE;
+}
+
+.btn.filter.btn--gray {
+  margin-left: 10px;
+  background-color: #758692;
+}
+
+.btn.filter.btn--gray:hover {
+  background-color: #5b6770;
 }

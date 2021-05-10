@@ -242,11 +242,74 @@
           <div class="search">
             <input type="text" placeholder="Search in Q&A..." />
           </div>
+          
           <div class="filter__container">
+            <div class="sidebar__header">
+              <ul>
+                <li><h4><a href="#">Filter Results</a></h4></li>
+                <!-- <li><h4><a href="#">Help</a></h4></li> -->
+              </ul>
+            </div>
             <label class="checkbox__container">
               <input type="checkbox" checked="checked"/>
               <span class="checkbox"></span>
+              Exclude questions with any answers
             </label>
+            <label class="checkbox__container">
+              <input type="checkbox" checked="checked"/>
+              <span class="checkbox"></span>
+              Exclude questions with downvotes
+            </label>
+            <label class="checkbox__container">
+              <input type="checkbox" checked="checked"/>
+              <span class="checkbox"></span>
+              Exclude questions with an accepted answer
+            </label>
+            <label class="checkbox__container">
+              <input type="checkbox" checked="checked"/>
+              <span class="checkbox"></span>
+              Exclude questions I have already answered
+            </label>
+            <div class="input__container">
+              <label for="filter__tags">Tags:</label>
+              <button class="input__add">+</button>
+              <input type="text" id="filter__tags" name="filter__tags" placeholder="Start typing tag name..." />
+            </div>
+            <div class="filter_tags__container">
+              <button class="filter-tag"><p>question</p></button>
+              <button class="filter-tag"><p>discussion</p></button>
+              <button class="filter-tag"><p>feature-request</p></button>
+              <button class="filter-tag"><p>moderators</p></button>
+              <button class="filter-tag"><p>comments</p></button>
+            </div>
+            <hr />
+            <div class="select__container">
+              <label class="select__label">Posted in the last:</label>
+              <label class="select__item-container first">
+                <span>30</span> mins
+                <input type="radio" checked="checked" name="posted_time" />
+                <div class="select__background"></div>
+              </label>
+              <label class="select__item-container">
+                <span>2</span> hrs
+                <input type="radio" name="posted_time" />
+                <div class="select__background"></div>
+              </label>
+              <label class="select__item-container">
+                <span>24</span> hrs
+                <input type="radio" name="posted_time" />
+                <div class="select__background"></div>
+              </label>
+              <label class="select__item-container">
+                <span>Week</span>
+                <input type="radio" name="posted_time" />
+                <div class="select__background"></div>
+              </label>
+            </div>
+            <hr />
+            <button class="btn filter">Filter Results</button>
+            <button class="btn filter btn--outline">Select Preset</button>
+            <button class="btn filter btn--gray">Save Preset</button>
           </div>
         </div>
       </div> 
