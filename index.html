@@ -14,7 +14,7 @@
 </head>
 <body>
   <header class="top-bar">
-    <a href="#" class="site-title"><h1></h1><strong>meta</strong>.codidact.com</h1></a>
+    <a href="#" class="site-title"><h1><strong>meta</strong>.codidact.com</h1><img src="/img/caret_down.svg" width="13" height="7" /></a>
     <ul class="top-bar__menu">
       <li class="top-bar__menu--item"><a href="#">users</a></li>
       <li class="top-bar__menu--item"><a href="#">help</a></li>
@@ -34,6 +34,13 @@
             <img src="/img/inbox.svg" width="42" height="26" /></div>
           </button>
       </div>
+      <button id="mobile-hamburger">
+        <div class="icon-container">
+          <div class="icon--line"></div>
+          <div class="icon--line"></div>
+          <div class="icon--line"></div>
+        </div>
+      </button>
     </div>
   </div>
   <main>
@@ -43,6 +50,7 @@
           <li class="content__menu--item active"><h2><a href="#">Q&AMP;A</a></h2></li>
           <li class="content__menu--item"><a href="#">Site Proposals</a></li>
           <li class="content__menu--item"><a href="#">Blog</a></li>
+          <li class="content__menu--item"><button id="sidebar-toggle" class="btn filter btn--outline" type="button">Filter Results</button></li>
         </ul>
       </div>
       <div class="content-container">
