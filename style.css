@@ -123,6 +123,37 @@ h3 {
   vertical-align: bottom;
 }
 
+.site-selector {
+  background-color: white;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  position: absolute;
+  height: 0;
+  padding: 0;
+  top: 37px;
+  left: 20px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.site-selector.open {
+  padding: 20px 30px 20px 30px;
+  height: auto;
+}
+
+.site-selector li {
+  display:  block;
+  margin-bottom: 10px;
+}
+
+.site-selector li a {
+  color: #4D4D4D;
+}
+
+.site-selector li a:hover {
+  color: #0476D9;
+}
+
 .site-logo {
   border-radius: 4px 4px 0 0;
   width: 170px;
@@ -714,6 +745,12 @@ background-color: #758692;
   display: none;
   opacity: 0;
   visibility: hidden;
+}
+
+@media screen and (min-width: 852px) {
+  #sidebar-toggle {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1025px) {
