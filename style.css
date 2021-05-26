@@ -212,6 +212,7 @@ h3 {
 
 .content__menu {
   max-width: 1125px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -221,6 +222,7 @@ h3 {
 
 .content-container {
   max-width: 1125px;
+  width: 100%;
   margin: 0 auto;
 }
 
