@@ -16,14 +16,30 @@ document.querySelectorAll('.filter-tag').forEach(function(element) {
   })
 });
 
+var filterInput = document.getElementById('filter__tags');
+filterInput.addEventListener('keyup', function(e) {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    addPill();
+    filterInput.value = "";
+    filterInput.focus();
+  }
+});
+
 document.querySelector('.input__add').addEventListener('click', function() {
+  addPill();
+  filterInput.value = "";
+  filterInput.focus();
+});
+
+function addPill() {
   var contents = document.getElementById('filter__tags').value;
   var pill = htmlToElement('<button class="filter-tag"><p>' + contents + '</p></button>');
   document.querySelector('.filter_tags__container').appendChild(pill);
   pill.addEventListener('click', function() {
     pill.remove();
-  })
-});
+  });
+}
 
 
 function htmlToElement(html) {
