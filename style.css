@@ -749,6 +749,23 @@ background-color: #758692;
   visibility: hidden;
 }
 
+.post__content {
+  line-height: 1.3;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+
+.post__content p:not(:last-child) {
+margin-bottom: 10px;
+}
+
+.post__content--expanded {
+  max-height: 2000px;
+  margin: 20px 0 20px 0;
+}
+
 @media screen and (min-width: 852px) {
   #sidebar-toggle {
     display: none;

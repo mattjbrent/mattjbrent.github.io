@@ -32,6 +32,20 @@ document.querySelector('.input__add').addEventListener('click', function() {
   filterInput.focus();
 });
 
+var contentExpanderButtons = document.querySelectorAll('.expand-content');
+contentExpanderButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    var closestPostContent = button.closest('.post').querySelector('.post__content');
+    closestPostContent.classList.toggle('post__content--expanded');
+    if (closestPostContent.classList.contains('post__content--expanded')) {
+      button.innerHTML = 'Close <img src="img/expand.svg" width="10" height="10" />';
+    } else {
+      button.innerHTML = 'Expand <img src="img/expand.svg" width="10" height="10" />';
+    }
+  });
+});
+
+
 function addPill() {
   var contents = document.getElementById('filter__tags').value;
   var pill = htmlToElement('<button class="filter-tag"><p>' + contents + '</p></button>');
