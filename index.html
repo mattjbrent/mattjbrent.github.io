@@ -9,12 +9,12 @@
   <meta name="author" content="Codidact Team">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="/reset.css">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="top-bar">
-    <a href="#" class="site-title"><h1><strong>meta</strong>.codidact.com</h1><img src="/img/caret_down.svg" width="13" height="7" /></a>
+    <a href="#" class="site-title"><h1><strong>meta</strong>.codidact.com</h1><img src="img/caret_down.svg" width="13" height="7" /></a>
     <ul class="site-selector">
       <li><a href="#">food.codidact.com</a></li>
       <li><a href="#">writing.codidact.com</a></li>
@@ -31,15 +31,15 @@
   </header>
   <div class="site-header">
     <div class="site-logo__wrapper">
-      <div class="site-logo"><img src="/img/meta_logo.svg" width="118" height="42" /></div>
+      <div class="site-logo"><img src="img/meta_logo.svg" width="118" height="42" /></div>
     </div>
     <div class="user-menu__wrapper">
       <div class="user-menu">
-        <div class="user-menu__profile"><a href="#"><img src="/img/user_profile_img.jpg" width="44.5" height="44.5" /></a></div>
+        <div class="user-menu__profile"><a href="#"><img src="img/user_profile_img.jpg" width="44.5" height="44.5" /></a></div>
         <div class="user-menu__points"><p>1244</p></div>
         <div class="user-menu__inbox">
           <button>
-            <img src="/img/inbox.svg" width="42" height="26" /></div>
+            <img src="img/inbox.svg" width="42" height="26" /></div>
           </button>
       </div>
       <button id="mobile-hamburger">
@@ -64,12 +64,15 @@
       <div class="content-container">
         <div class="content__section__container">
           <div class="content__top-bar">
-            <ul class="content__top-bar__menu">
-              <li class="active"><a href="#">Posts</a></li>
-              <li><a href="#">Tags</a></li>
-            </ul>
-            <a href="#" class="btn ask-btn">Ask Question</a>
             <h3 class="posttype-description">General Q&AMP;A about the Codidact instance hosted at codidact.com or the software that runs it.</h3>
+            <div class="content__top-bar__menu--container">
+              <ul class="content__top-bar__menu">
+                <li class="active"><a href="#">Posts</a></li>
+                <li><a href="#">Tags</a></li>
+                <li><a href="#">Edits</a></li>
+              </ul>
+              <a href="#" class="btn ask-btn">Ask Question</a>
+            </div>
           </div>
           <div class="content-posts">
             <div class="post">
@@ -388,6 +391,6 @@
       </div> 
     </div>
   </main>
-  <script src="/index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
